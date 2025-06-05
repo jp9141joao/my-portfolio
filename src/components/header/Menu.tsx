@@ -4,7 +4,6 @@ import { Popover, PopoverContent, PopoverTrigger } from "../ui/popover";
 import { Button } from "../ui/button";
 import { HiMenu, HiX } from "react-icons/hi";
 import { LuUserSearch, LuBrain, LuCodeXml, LuBriefcase } from "react-icons/lu";
-import { setSourceMapsEnabled } from "process";
 
 export default function Menu() {
 
