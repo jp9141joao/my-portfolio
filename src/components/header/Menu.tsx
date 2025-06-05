@@ -3,7 +3,7 @@ import { useState } from "react";
 import { Popover, PopoverContent, PopoverTrigger } from "../ui/popover";
 import { Button } from "../ui/button";
 import { HiMenu, HiX } from "react-icons/hi";
-import { LuUserSearch, LuBrain, LuCodeXml, LuBriefcase } from "react-icons/lu";
+import { LuSquareUserRound, LuBrain, LuCodeXml, LuBriefcase } from "react-icons/lu";
 
 export default function Menu() {
 
@@ -31,7 +31,7 @@ export default function Menu() {
             >
                 <div>
                     <Button className="p-0">
-                        <LuUserSearch className="text-white size-4.5 2xs:size-5"/>
+                        <LuSquareUserRound className="text-white size-4.5 2xs:size-5"/>
                     </Button>
                 </div>
                 <div>
