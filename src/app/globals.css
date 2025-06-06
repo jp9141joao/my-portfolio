@@ -3,6 +3,10 @@
 
 @custom-variant dark (&:is(.dark *));
 
+.test {
+  border: 1px solid red
+}
+
 @theme inline {
 
   --breakpoint-2xs: 390px;
