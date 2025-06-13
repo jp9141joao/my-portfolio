@@ -9,7 +9,7 @@ export default function Header() {
     const widthRef = useRef<HTMLDivElement>(null);
 
     return (
-        <div className="flex justify-between items-start">
+        <div className="flex justify-between items-center lg:items-start">
             <div>
                 <h1 className="text-xl 2xs:text-2xl font-semibold">
                     Hi, <span className="break-normal whitespace-nowrap">I&apos;m João 👋</span>

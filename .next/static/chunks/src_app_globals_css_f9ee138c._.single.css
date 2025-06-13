@@ -44,9 +44,6 @@
     --color-gray-300: oklch(87.2% .01 258.338);
     --color-white: #fff;
     --spacing: .25rem;
-    --container-3xs: 16rem;
-    --container-xs: 20rem;
-    --container-sm: 24rem;
     --text-sm: .875rem;
     --text-sm--line-height: calc(1.25 / .875);
     --text-base: 1rem;
@@ -271,12 +268,8 @@
     z-index: 50;
   }
 
-  .-mt-2 {
-    margin-top: calc(var(--spacing) * -2);
-  }
-
-  .-mt-4 {
-    margin-top: calc(var(--spacing) * -4);
+  .block {
+    display: block;
   }
 
   .flex {
@@ -317,60 +310,8 @@
     max-width: 1536px;
   }
 
-  .min-w-3xs {
-    min-width: var(--container-3xs);
-  }
-
-  .min-w-\[3em\] {
-    min-width: 3em;
-  }
-
-  .min-w-\[4\.6em\] {
-    min-width: 4.6em;
-  }
-
-  .min-w-\[5em\] {
-    min-width: 5em;
-  }
-
-  .min-w-\[6em\] {
-    min-width: 6em;
-  }
-
-  .min-w-\[8em\] {
-    min-width: 8em;
-  }
-
-  .min-w-\[9\.5em\] {
-    min-width: 9.5em;
-  }
-
-  .min-w-\[9em\] {
-    min-width: 9em;
-  }
-
-  .min-w-\[10em\] {
-    min-width: 10em;
-  }
-
-  .min-w-\[30em\] {
-    min-width: 30em;
-  }
-
   .min-w-\[350px\] {
     min-width: 350px;
-  }
-
-  .min-w-full {
-    min-width: 100%;
-  }
-
-  .min-w-sm {
-    min-width: var(--container-sm);
-  }
-
-  .min-w-xs {
-    min-width: var(--container-xs);
   }
 
   .shrink-0 {
@@ -381,24 +322,12 @@
     transform-origin: var(--radix-popover-content-transform-origin);
   }
 
-  .grid-rows-1 {
-    grid-template-rows: repeat(1, minmax(0, 1fr));
-  }
-
-  .place-items-center {
-    place-items: center;
-  }
-
   .place-items-start {
     place-items: start;
   }
 
   .items-center {
     align-items: center;
-  }
-
-  .items-start {
-    align-items: flex-start;
   }
 
   .justify-between {
@@ -421,12 +350,8 @@
     gap: calc(var(--spacing) * 2);
   }
 
-  .gap-4 {
-    gap: calc(var(--spacing) * 4);
-  }
-
-  .gap-y-60 {
-    row-gap: calc(var(--spacing) * 60);
+  .gap-y-3 {
+    row-gap: calc(var(--spacing) * 3);
   }
 
   .rounded-2xl {
@@ -478,10 +403,6 @@
     padding: calc(var(--spacing) * 2);
   }
 
-  .px-2 {
-    padding-inline: calc(var(--spacing) * 2);
-  }
-
   .px-3 {
     padding-inline: calc(var(--spacing) * 3);
   }
@@ -529,10 +450,6 @@
   .break-normal {
     overflow-wrap: normal;
     word-break: normal;
-  }
-
-  .break-words {
-    overflow-wrap: break-word;
   }
 
   .whitespace-nowrap {
@@ -794,6 +711,12 @@
     .\32 xs\:text-base {
       font-size: var(--text-base);
       line-height: var(--tw-leading, var(--text-base--line-height));
+    }
+  }
+
+  @media (width >= 64rem) {
+    .lg\:items-start {
+      align-items: flex-start;
     }
   }
 
