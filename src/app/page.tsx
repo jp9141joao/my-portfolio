@@ -1,11 +1,18 @@
+"use client";
+import { useRef } from 'react';
 import Navbar from '../components/Navbar';
 import Hero from '@/components/hero/Hero';
+import AboutMe from '@/components/aboutMe/AboutMe';
 
 export default function Home() {
+
+  const heightRef = useRef<HTMLDivElement>(null);
+
   return (
-    <div className="grid gap-y-3 bg-white-200">
-      <Navbar />
-      <Hero />
+    <div className="grid bg-white-200  max-w-[1536px]">      
+      <Navbar heightRef={heightRef} />
+      <Hero heightRef={heightRef} />
+      <AboutMe />
     </div>
   );
 }

@@ -192,17 +192,17 @@ function Hero() {
                 className: "rounded-2xl"
             }, void 0, false, {
                 fileName: "[project]/src/components/hero/Hero.tsx",
-                lineNumber: 12,
+                lineNumber: 10,
                 columnNumber: 17
             }, this)
         }, void 0, false, {
             fileName: "[project]/src/components/hero/Hero.tsx",
-            lineNumber: 11,
+            lineNumber: 9,
             columnNumber: 13
         }, this)
     }, void 0, false, {
         fileName: "[project]/src/components/hero/Hero.tsx",
-        lineNumber: 9,
+        lineNumber: 7,
         columnNumber: 9
     }, this);
 }
