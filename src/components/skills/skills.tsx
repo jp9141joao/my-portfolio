@@ -1,4 +1,4 @@
-import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "../ui/carousel";
+import { Carousel, CarouselContent, CarouselItem} from "../ui/carousel";
 import { Card, CardContent } from "../ui/card";
 
 export default function Skills() {
@@ -12,14 +12,7 @@ export default function Skills() {
         'Express',
         'Next.js',
     ];
-    const softSkills = [
-        'Problem Solving',
-        'Communication',
-        'Teamwork',
-        'Adaptability',
-        'Time Management'
-    ];
-
+  
     return (
         <div className="mt-1">
             <div>
@@ -28,7 +21,7 @@ export default function Skills() {
                         <span className="text-blue-400 underline">Soft</span> Skills
                     </h1>
                 </div>
-                // 33% of the carousel width.
+               
 <Carousel
       opts={{
         align: "start",

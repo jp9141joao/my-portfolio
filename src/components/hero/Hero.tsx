@@ -1,17 +1,5 @@
-import Image from 'next/image';
-import { useEffect, useState } from 'react';
+export default function Hero() {
 
-export default function Hero({ heightRef }: { heightRef: React.RefObject<HTMLDivElement | null> }) {
-
-    const [ height, setHeight ] = useState<number>(0);
-
-    useEffect(() => {
-
-        if (heightRef.current) {
-            setHeight((heightRef.current.offsetHeight / window.innerHeight) * 100);
-        }
-
-    }, [heightRef.current?.offsetWidth]);
 
     return (
         <div 
