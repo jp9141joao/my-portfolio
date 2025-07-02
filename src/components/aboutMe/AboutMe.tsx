@@ -3,7 +3,7 @@ import Skills from "../skills/skills";
 export default function AboutMe() {
 
     return (
-        <div className="px-[1.3rem] py-[2.3rem] bg-[#2a2a33] h-[70vh]">
+        <div className="px-[1.3rem] py-[2.3rem] bg-[#2a2a33] h-[140vh]">
             <div className="grid gap-3 ">
                 <div>
                     <div>
