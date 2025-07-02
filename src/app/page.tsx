@@ -9,7 +9,7 @@ export default function Home() {
   const heightRef = useRef<HTMLDivElement>(null);
 
   return (
-    <div className="grid bg-white-200  max-w-[1536px]">      
+    <div className="grid bg-white-200 ">      
       <Navbar heightRef={heightRef} />
       <Hero heightRef={heightRef} />
       <AboutMe />

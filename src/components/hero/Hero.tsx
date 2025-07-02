@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { useEffect, useState } from 'react';
 
 export default function Hero({ heightRef }: { heightRef: React.RefObject<HTMLDivElement | null> }) {
@@ -14,10 +15,10 @@ export default function Hero({ heightRef }: { heightRef: React.RefObject<HTMLDiv
 
     return (
         <div 
-            className='grid place-items-start items-center text-start py-[0.5rem] bg-[#1c1c24]'
-            style={{ height: height ? `${70 - height}vh` : "auto" }}
+            className='grid place-items-end items-center text-start py-[0.5rem] bg-[#1c1c24]'
+            
         >
-            <div className='grid gap-3 px-[1.3rem]'>
+            <div className='grid gap-3 px-[1.3rem] mt-[12vh] mb-[3vh]'>
                 <div className=''>
                     <h1 className="text-4xl text-white font-semibold font-poppins">
                         Hello.
@@ -34,12 +35,11 @@ export default function Hero({ heightRef }: { heightRef: React.RefObject<HTMLDiv
                         I build powerful web and system solutions that combine software and hardware, transforming ideas into high-impact digital experiences.                
                     </p>
                 </div>
-            </div>
-            <div className='w-full' >
-                <div className='w-full flex justify-end items-right' >
-                    
+                <div className='mt-6'>
+                    <div className='rounded-2xl block bg-white w-[90vw] h-[24vh]'></div>
                 </div>
             </div>
+            
         </div>
     )
 }
