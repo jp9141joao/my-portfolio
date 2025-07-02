@@ -1,5 +1,3 @@
-import Image from 'next/image';
-import HeroImageMain from '@/assets/safar-safarov-koOdUvfGr4c-unsplash.jpg'
 import { useEffect, useState } from 'react';
 
 export default function Hero({ heightRef }: { heightRef: React.RefObject<HTMLDivElement | null> }) {
@@ -25,7 +23,7 @@ export default function Hero({ heightRef }: { heightRef: React.RefObject<HTMLDiv
                         Hello.
                     </h1>
                     <h1 className="text-4xl text-white font-semibold font-poppins">
-                        I'm <span className='bg-gradient-to-r from-[#00FF99] to-[#00CFFF] bg-clip-text text-transparent'>João!</span>👋
+                        I&apos;m <span className='bg-gradient-to-r from-[#00FF99] to-[#00CFFF] bg-clip-text text-transparent'>João!</span>👋
                     </h1>
                     <p className='text-sm text-gray-200 font-poppins font-medium'>
                         Full Stack Developer | Network Analyst.
